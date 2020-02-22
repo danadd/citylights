@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+nav li {
+    display: inline;
+    padding-right: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+
+  }
+
+nav{
+background-color: rgb(231, 230, 230);
+padding: 5px;
+}  
+
+.banner{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4%;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.viewcart{
+  padding: 5px;
+  display: block;
+  position: absolute;
+  right: 1.5em;
+}  
+
+h1{
+    font-family: "Nunito", sans-serif;
+    color: rgb(247, 247, 247);
+    padding: 10px;
+    font-size: 5vw;
+    position: absolute;
+    top: 3em;
+    right: 5.20em;
+    border-radius: 10px;
+    border: solid;
+    width: fit-content;
+}
+
+.container{
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(3, 240px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 40px;
+    padding: 10px;
+    text-align: center;
+
+}
+body{
+    background-color: #EEE;
+    font-family: "Nunito", sans-serif
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  footer{
+    color: rgb(167, 167, 167);
+    padding: 5px;
+    margin: 5px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.8em;
+    height: 2.5rem;   
+}
+/*Mobile friendly */
+@media only screen and (max-width: 760px){
+  img#banner{
+    display: none;
+  }
+  #bannertxt{
+    text-align: center;
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 5.2em;
+    right: 8em;
+    color: rgb(12, 12, 12);
+    width: fit-content;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 424px){
+  h1{
+      display: none;
+  }
+}

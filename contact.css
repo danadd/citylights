@@ -1,0 +1,126 @@
+nav{
+    background-color: rgb(231, 230, 230);
+    padding: 5px;
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 2em;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+    text-decoration: none;
+}
+
+body{
+    background-color: #EEE;
+}
+
+h1{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: calc(40px + 0.5vw);
+}
+
+h2{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: calc(10px + 0.5vw);
+}
+
+h3{
+    margin: 2px;
+    padding: 5px;
+    font-size: calc(16px + 0.5vw);
+}
+
+.form{
+font-family: "Nunito", sans-serif;
+font-size: calc(14px + 0.5vw);
+text-align: center;
+padding: 3px;
+margin: 0.5em;
+}
+
+.submit{
+    text-align: center;
+}
+
+textarea {
+     font-size: calc(10px + 0.5vw);
+     font-family: "Nunito", sans-serif;
+     }
+
+.contact-info{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(16px + 0.5vw);
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 200px 250px 200px 200px;
+    grid-template-rows: 100px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(10px + 0.5vw);
+    margin: 1px;
+    padding: 5px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+a:active {
+    text-decoration: underline;
+  }  
+
+.citylights img{
+    padding: 5px;
+    display: block;
+    margin-left: 100%;
+    margin: auto;
+    width: 20%;
+    height: auto;
+    
+} 
+
+/*mobile friendly! */
+@media (max-width: 800px) {
+    /* For mobile phones: */
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10vw;
+    }
+    h1{
+        font-family: "Nunito", sans-serif;
+        text-align: center;
+        font-size: calc(30px + 0.5vw);
+    }
+    .citylights img{
+        padding: 5px;
+        display: block;
+        margin-left: 100%;
+        margin: auto;
+        width: 50%;
+        height: auto;
+        
+    } 
+  }

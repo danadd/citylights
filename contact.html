@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAEKHYUN | Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="./contact.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./about.html">About The Artist</a></li>
+                        <li>Fan Forum (COMING SOON!)</li>
+                    </ul>
+                </nav>
+            </header>
+    <div class="contact" id="contact">
+    <h1>Contact Us</h1>
+    </div>
+    <!--Page Needs to be made for contactus submit form-->
+    <div class="form">
+    <form id= "contact" name="contactform" action="./contactus.php" method="POST">
+        <section class="firstname">
+            <label for="firstname">
+             First Name: <input type="text" name="firstname" id="firstname" required>
+            </label>
+        </section>
+        <section class="lastname">
+            <label for="lastname">
+             Last Name: <input type="text" name="lastname" id="lastname" required>
+            </label>
+        </section>
+        <section class="email">
+            <label for="email">
+            Email Address: <input type="email" name="email" id="email" required>    
+            </label>
+        </section>
+        <section class="Order Number">
+            <section class="ordernum">
+                <label for="ordernum">
+                   Order Number: <input type="number" name="ordernum" id="ordernum">
+                   <p>Order Numbers can be found in your confirmation email. <br>
+                    Don't have a question about your order? Leave the Order Number field blank and type your request below!
+                   </p>
+                </label>
+            </section>
+        </section>
+        <section class="contact">
+            <label for="inquire">
+            <br>
+            How may we help you?
+            <br><br>
+            <textarea id="inquire" name="inquire" rows="6" cols="50" required></textarea>
+        </label>
+        </section>
+        <section class="submit">
+            <button type="submit">Send</button>
+        </section>
+    </form> 
+    </div>
+</div>
+    <div class="citylights">
+        <img src="web/cltrans.png" alt="City Lights Logo">
+    </div>
+    <div class="contact-info">
+            <div class="phone">
+                <h3>Phone:</h3>
+                <p>(123)456-7891</p>
+                <img src="icons/phone36px.png">
+            </div>
+            <div class="address">
+                <h3>Address:</h3>
+                <p>123 Los Angeles Boulvard,
+                    <br>
+                    Los Angeles, CA
+                    <br>
+                    90013</p>
+                <img src="icons/location32px.png">
+            </div>
+            <div class="hours">
+                <h3>Hours:</h3>
+                <p>9AM-4PM PST
+                    <br>
+                     Monday-Friday*</p>
+                <img src="icons/shop36px.png">
+            </div>
+            <div class="email">
+                <h3>Email Us:</h3>
+                <p>citylights92@email.com
+                    <br><br>
+                <img src="icons/at32.png">
+            </div>
+     </div>    
+     <p>*Closed on Holidays: Christmas, New Year, New Year's Eve, and Thanksgiving</p>  
+</body>
+
+</html>

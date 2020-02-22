@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BAEKHYUN | City Lights Album</title>
+        <link href="purchase.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>    
+    <body>
+        <!--Up Here I want a Home; About ; Gallery; Shop. I also want his logo on the right of the page.-->
+        <!--Header-->
+        <header>
+            <nav>
+            <ul>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About The Artist</a></li>
+                <li>Fan Forum (COMING SOON!)</li>
+            </ul>
+            </nav>
+        </header>
+        <!--End Header-->
+        <!--Cart View-->
+        <div class="viewcart">
+            <a class="cart"  href="https://citylights.foxycart.com/cart?cart=view">
+                <img src="icons/supermarket24px.png">
+            <span class="fa fa-shopping-cart"></span>Cart (<span data-fc-id="minicart-quantity">0</span>)
+            </a>
+        </div>        
+        <!--Banner-->
+        <div class="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0069/4203/1983/products/BAEKHYUN_City_Lights_Album_01.jpg?v=1562201765" alt="Baekhyun Solo Album| City Lights" class="center">
+            <h1 class="center">City Lights | Baekhyun 1st Mini Album</h1>
+        </div>
+        <!--End Banner-->
+        <!--Pricing-->
+        <div id="price" class="price">
+                $12.50
+            </div>
+        <!--Old Form 
+            <form action="./submission.html" id="albumsubmission">
+                <section class="version">
+                    <h2>Which Version Would You Like?</h2>
+                        <input type="radio" id="day" name="album" value="day">
+                        <label for="day">Day Version</label>
+                        <br>
+                        <input type="radio" name="album" id="night" value="night">        
+                        <label for="night">Night Version</label>
+                </section>
+                <section class="amount-album">
+                    <label for="amount-album">How Many Albums Do You Want?</label>
+                    <input type="number" id="amount-album" name="amount-album" required min="1" max="100">
+                </section>
+                <section class="submission">
+                    <button type="submit" id="submit" value="submit" onclick="calculateTotal()">Confirm Order</button>
+                </section>
+            </form>
+          -->
+<!-- form example -->
+<form action="https://citylights.foxycart.com/cart" method="post" accept-charset="utf-8">
+<input type="hidden" name="name" value="City Lights album" />
+<input type="hidden" name="price" value="12.50" />
+<input type="hidden" name="code" value="sku123" />
+<label class="label_left">Album Version</label>
+<select name="album">
+    <option value="day">Day Version</option>
+    <option value="night">Night Version</option>
+</select>
+<input type="submit" value="Add to Cart" class="submit" />
+</form>
+<!--example end-->
+
+            <!--Baek's Cover Art-->
+            <!-- old
+                <div id="cover art" class="cover">
+                <img src=""
+                 alt="Side by side view of City Lights Albums">
+            </div>
+        -->
+            <!--End of His Cover Art-->
+            <!--Preorder-->
+            <div id= "preorder" class="preorder">
+                <h3>Pre-order bonus:</h3>
+                <p>Preorder City Lights by July 5th and receive a limited edition signed polaroid. All polaroids have been hand signed by the artist himself.
+                 There are two versions avaliable and they will be selected at random. Only avaliable while supplies last!   
+                 <!--Nah
+                </p> 
+                <img src="https://data.whicdn.com/images/320646831/large.jpg" alt="Preorder Benefits Signed Polaroid" class="preorderbonus1">        
+                <img src="https://pbs.twimg.com/media/CLYxBbtUAAAEdj5.jpg" alt="Preorder Benefits Signed Polaroid #2" class="preorderbonus2">
+                -->
+            </div> 
+            <!--End of Preorders-->
+            <!--Make 'em Love Baek-->
+            <div id="About" class="content">
+            <h1>About The Album</h1>
+            <p>City Lights is composed of six tracks with their own unique style and sound. 
+                Though each track offers something new and unique, they all mesh together
+                in a beautiful sound. Tracks such as <i>Ice Queen</i> let the listener relax to Baekhyun's smooth, low
+                register while <i>Betcha</i> will find itself on the houseparty playlist.
+            </p>
+            <p>
+                There are two versions: Day version and Night version. Both musical CDs
+                are the same, but the contents of the album booklet, photocards, and album design
+                is different. Please see below for the differences.
+            </p>
+            </div>
+            <!--Tracklist-->
+            <div id="tracklist" class="tracklist">
+                <h1>Tracklisting:</h1>
+                <ol>
+                    <li>UN Village</li>
+                    <li>Stay Up (Feat. Beenzino)</li>
+                    <li>Betcha</li>
+                    <li>Ice Queen</li>
+                    <li>Diamond</li>
+                    <li>Psycho (Bonus Track)</li>
+                </ol>
+            </div>
+            <!--End Tracklist-->
+            <!--YouTube embed-->
+            <div class="listen">
+            <h1>Listen to an Album Preview</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t9wAEOGiZnY" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>  
+            </div>
+            <!--Youtube embed-->
+            <!--Null
+            <h1>About The Artist</h1>
+            <p>Byun Baekhyun is the lead vocalist of Korean-Chinese group, EXO.
+                Debuting in 2012 through a series of 12 teasers, he has shown his vocal
+                poweress over the years. With the group's top selling hit, Growl, in 2013 
+                they were able to expand into the global market to reach more fans and admirers.
+            </p>
+            <p>Baekhyun isn't only known for his work in EXO. He is also a member of CBX, a 
+                group made up of EXO's Chen and Xiumin. The group offers refreshing sounds
+                such as Playdate and R&B tracks such as Blooming Days.
+            </p>
+            <p>Now he is back with his first solo album, City Lights. The album is composed of six
+                tracks ranging from soft-pop to R&B.
+            </p>
+        -->
+
+            <!--End of loving Baek. They should buy 10,00 copies now-->
+            <!--Album Preview-->
+            <div id="preview" class="album-preview">
+            <h1 text="center">Album Contents Preview</h1>
+                <img src="/shopping/albumpre1.jpg"
+                 alt="Baekhyun City Lights|Album preview Lyric Bookliet" class="center">
+                 <img src="/shopping/albumpre3.jpg"
+                 alt="Baekhyun City Lights|Album preview Lyric Booklet" class="center">
+                 <img src="/shopping/albumpre4.jpg"
+                 alt="Baekhyun City Lights|Album preview Lyric Booklet" class="center">
+                 <img src="/shopping/albumpre2.jpg"
+                 alt="Baekhyun City Lights|Album preview Folded Posters" class="center">
+                <img src="/shopping/albumpre5.jpg" 
+                alt="Baekhyun City Lights| Album preview Photocards" class="center">
+            </div>
+            <!--End of Preview-->
+            <!--Footer-->
+            <footer>
+                Copyright Dana Draper & SM Entertainment/Byun Baekhyun
+            </footer>
+            <!-- FOXYCART -->
+            <script data-cfasync="false" src="https://cdn.foxycart.com/citylights/loader.js" async defer></script>
+            <!-- /FOXYCART -->
+      
+    </body>
+    </html>

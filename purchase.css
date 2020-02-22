@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0;
+    align-items: center;
+}
+
+nav{
+    background-color: rgb(231, 230, 230);
+    padding: 5px;
+}
+
+nav li {
+    color: rgb(0, 5, 20);
+    display: inline;
+    padding-right: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+  }
+
+.viewcart{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    right: 1.5em;
+}  
+
+body {
+    background: #EEE;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif
+  }
+
+.banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+}  
+
+.bannercashbee img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+} 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1{
+    color: rgb(0, 5, 20);
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: calc(25px + 0.5vw)
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(13px + 0.5vw);
+}
+
+h2{
+    color: rgb(0, 5, 20);
+    font-family: "Nunito", sans-serif;
+    padding: 5px;
+    margin: 2px auto;
+    font-size: calc(15px + 0.5vw);
+}
+
+h3{
+    color: rgb(46, 44, 44);
+    font-family: Verdana;
+    margin: 2px auto;
+    font-size: calc(10px + 0.5vw);
+}
+
+.price{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(20px + 0.5vw);
+    text-align: center;
+    font-weight: 700px;
+}
+
+.preorder{
+    font-size: 14;
+    font-family: Arial;
+    color: rgb(14, 14, 14);
+    padding: 50px 50px;
+    margin: 0 auto;
+    min-height: 200px;
+    max-height: 600px;
+}
+
+.preorderbonus1{
+    width: 15%;
+    height: auto;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.preorderbonus2{
+    width: 20%;
+    height: auto;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.banner{
+    margin: 1px;
+}
+
+.bannercashbee{
+    margin: 1px;
+}
+
+form {
+    margin: 20px;
+    padding: 10px;
+}
+
+.version{
+    line-height: 1.5;
+}
+
+.poster{
+    line-height: 1.5;
+}
+
+.block {
+    display: block;
+ }
+
+.amount-album, .amount-card, .amount-poster{
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+/*old
+.cover{
+    position: absolute;
+    left: 1400px;
+    top: 700px;
+}
+
+/* resize images. This code lets the image scale down if it has to,
+ but never scale up to be larger than its original size  */
+/*.cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4%;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}*/
+
+.content {
+    font-size: 14;
+    font-family: Arial;
+    color: rgb(14, 14, 14);
+    padding: 50px 50px;
+    margin: 0 auto;
+    min-height: 200px;
+    max-height: 600px;
+}
+
+.tracklist {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 10px;
+
+}
+
+.tracklist li{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(12px + 0.5vw)
+}
+iframe {
+    width: 560px;
+    display: block;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+.album-preview {
+    padding: 10px;
+}
+
+/*cashbee */
+#card-preview {
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-preview img{
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    max-width: 50%;
+}
+
+.cover {
+    height: 450px;
+    width: 400px;
+    padding: 10px;
+}
+
+.posterpre img{
+    border-radius: 15px;;
+    width: 40%;
+    height: auto;
+    padding: 0.2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info{
+    padding: 0.5em;
+    text-align: center;
+    padding: 5px;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }  
+
+footer {
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+    padding: 5px;
+    margin: 5px;
+    height: 2rem;
+}
+/* responsive YouTube for mobile! */
+@media (max-width: 424px){
+.listen{
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+}
+.listen iframe, .listen object, .listen embed{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+/*Responsive mobile design */
+h1{
+    color: rgb(0, 5, 20);
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: calc(20px + 0.5vw)
+}
+
+.banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+} 
+
+.bannercashbee img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+} 
+
+.viewcart{
+    padding: 5px;
+    display: block;
+    position: relative;
+    left: 16em;
+}  
+}

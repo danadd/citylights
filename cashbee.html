@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Submit button doesn't work. Please fix! Forms are now fixed. -->
+        <title>BAEKHYUN | Cashbee Transportation Card</title>
+        <link href="purchase.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>    
+    <body>
+        <!--Up Here I want a Home; About ; Gallery; Shop. I also want his logo on the right of the page.-->
+        <!--Header-->
+        <header>
+            <nav>
+            <ul>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About The Artist</a></li>
+                <li>Fan Forum (COMING SOON)</li>
+            </ul>
+            </nav>
+        </header>
+        <!--End Header-->
+        <!--Cart View-->
+        <div class="viewcart">
+            <a class="cart"  href="https://citylights.foxycart.com/cart?cart=view">
+                <img src="icons/supermarket24px.png">
+            <span class="fa fa-shopping-cart"></span>Cart (<span data-fc-id="minicart-quantity">0</span>)
+            </a>
+        </div>        
+        <!--Banner-->
+        <div class="bannercashbee">
+        <img src="shopping/CLCardHD.jpg" alt="Baekhyun City Lights Cashbee Card" class="center">
+            <h1 class="center">City Lights | Baekhyun City Lights Transporation Card</h1>
+        </div>
+        <!--Pricing-->
+        <div id="price" class="price">
+            $5.00
+        </div>        
+        <!--End Banner-->
+        <!--Form  
+            <form action="./submission.html" id="cashbee">
+                <section class="version">
+                    <h2>Which Version Would You Like?</h2>
+                        <input type="radio" id="day" name="card" value="day">
+                        <label for="day">Day Version</label>
+                        <br>
+                        <input type="radio" name="card" id="night" value="night">        
+                        <label for="night">Night Version</label>
+                </section>
+                <section class="amount-card">
+                    <label for="amount-card">How Many Transportation Cards Do You Want?</label>
+                    <input type="number" id="amount-card" name="amount-card" required min="1" max="100">
+                </section>
+                <section class="submission">
+                    <button type="submit">Confirm Order</button>
+                </section>
+            </form>
+            End Form-->
+            <!--New Form-->
+            <form action="https://citylights.foxycart.com/cart" method="post" accept-charset="utf-8">
+                <input type="hidden" name="name" value="City Lights Cashbee" />
+                <input type="hidden" name="price" value="5.00" />
+                <input type="hidden" name="code" value="sku104" />
+                <label class="label_left">Cashbee Version</label>
+                <select name="cashbee">
+                    <option value="day">Day Version</option>
+                    <option value="night">Night Version</option>
+                </select>
+                <input type="submit" value="Add to Cart" class="submit" />
+                </form>
+            <!--End New Form-->
+            <!--About-->
+            <div id="About" class="content">
+                    <h1>About</h1>
+                    <p>Considering taking a vacation to South Korea? Need a quick and convenient way to pay for public transportation? A Cashbee card may be right for you!
+                    </p> 
+                    <p>Top up this card at your local 7/11, GS25, or Cashbee Kiosk with Korean won (cash only). Once loaded, simply tap this card on designated areas on the bus, subway station, or taxi. You can even use this card to pay for items at convenient stores!
+                    </p>
+                    <p>
+                        This latest version comes in two designs: Day Version and Night Version to make Baekhyun's 1st solo album. Both cards work in the same way and only differ by design.
+                    </p>
+                    </div>
+            <!--Card Preview-->
+            <h1 text="center">Card Previews</h1>
+            <div id="card-preview" class="card-preview">
+                <img src ="shopping/CLCardday.jpg" class="center">
+                <img src="shopping/CLCardnight.jpg" class="center"> 
+            </div>
+            <!--End of Card Preview-->
+            <!--Footer-->
+            <hr>
+            <footer>
+                Copyright Dana Draper & SM Entertainment/Byun Baekhyun/Cashbee
+            </footer>
+            <!-- FOXYCART -->
+            <script data-cfasync="false" src="https://cdn.foxycart.com/citylights/loader.js" async defer></script>
+<!-- /FOXYCART -->            
+    </body>
+    </html>

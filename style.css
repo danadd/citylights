@@ -1,0 +1,55 @@
+h1 {
+    border: solid 3px rgb(252, 252, 252);
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vw;
+    color: rgb(247, 247, 247);
+    border-radius: 10px;
+    
+}
+
+body {
+    /*background-image: url(https://i.imgur.com/KlKHPkJ.jpg);*/
+    background-color: #696969;
+    width: 100%;
+    /*height: 940px*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.enter{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5vw;
+    color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: 35px;
+    right:50px;
+}
+
+.welcome{
+    margin: 0 auto;
+    padding: 5px;
+    position: absolute;
+    bottom: 65px;
+    right: 50px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: rgb(73, 73, 73);
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
