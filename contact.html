@@ -20,9 +20,9 @@
     <div class="contact" id="contact">
     <h1>Contact Us</h1>
     </div>
-    <!--Page Needs to be made for contactus submit form-->
+    
     <div class="form">
-    <form id= "contact" name="contactform" action="./contactus.php" method="POST">
+    <form id= "contact" name="contactform" action="./thankyou.html" onsubmit="return true">
         <section class="firstname">
             <label for="firstname">
              First Name: <input type="text" name="firstname" id="firstname" required>
@@ -57,7 +57,7 @@
         </label>
         </section>
         <section class="submit">
-            <button type="submit">Send</button>
+            <button onclick="sendContact();">Send</button>
         </section>
     </form> 
     </div>
@@ -95,6 +95,9 @@
             </div>
      </div>    
      <p>*Closed on Holidays: Christmas, New Year, New Year's Eve, and Thanksgiving</p>  
+
+     <!--script for form-->
+     <script src="formscript.js"></script>
 </body>
 
 </html>

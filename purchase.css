@@ -317,7 +317,7 @@ h1{
 .viewcart{
     padding: 5px;
     display: block;
+    text-align: right;
     position: relative;
-    left: 16em;
 }  
 }
