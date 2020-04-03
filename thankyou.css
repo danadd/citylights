@@ -1,10 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0;
+    align-items: center;
+}
+
+nav{
+    background-color: rgb(231, 230, 230);
+    padding: 5px;
+}
+
+nav li {
+    color: rgb(0, 5, 20);
+    display: inline;
+    padding-right: 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+  }
+
 h1{
     font-family: "Nunito", sans-serif;
     position: absolute;
-    top: 5.50em;
+    top: 6.00em;
     left: 13.20em;
     border: solid;
-    color: rgb(5, 5, 5);
+    color: white;
     border-radius: 10px;
     padding: 6px;
     font-size: 4vw;
@@ -15,6 +40,14 @@ h1{
 p{
     font-family: "Nunito", sans-serif;
     font-size: calc(15px + 0.5vw);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+#back{
+    font-family: "Nunito", sans-serif;
+    font-size: calc(20px + 0.5vw);
     position: relative;
     text-align: center;
 }
@@ -29,7 +62,7 @@ p{
 .thankyou img{
     max-width: 100%;
     height: auto;
-    border-radius: 4%;
+    border-radius: 5%;
     display: block;
     padding: 5px;
     margin: 5px;  
@@ -66,3 +99,33 @@ a:visited{
 a:active {
     text-decoration: underline;
   }  
+
+@media (max-width: 800px){
+
+  h1{
+    top: 8.00em;
+    left: 12.50em;
+ 
+}
+
+  }
+
+@media (max-width: 430px){
+    h1{
+        display: none;
+    }
+    p{
+        text-align: left;
+    }
+
+    .thankyou{
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+  }
