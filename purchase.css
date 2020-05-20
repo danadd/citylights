@@ -98,25 +98,38 @@ h3{
     font-size: 14;
     font-family: Arial;
     color: rgb(14, 14, 14);
-    padding: 50px 50px;
-    margin: 0 auto;
-    min-height: 200px;
-    max-height: 600px;
+    padding: 2.5em;
 }
 
-.preorderbonus1{
-    width: 15%;
-    height: auto;
-    padding: 2px;
-    margin: 0 auto;
+.form_purchase{
+    font-size: 1.5em;
+    padding: 1em;
 }
 
-.preorderbonus2{
-    width: 20%;
-    height: auto;
-    padding: 2px;
-    margin: 0 auto;
-}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black}
+  
+  .button:active {
+    background-color: #C3E4ED;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .banner{
     margin: 1px;
@@ -145,36 +158,14 @@ form {
 
 .amount-album, .amount-card, .amount-poster{
     padding: 15px;
-    margin: 0 auto;
 }
 
-
-/*old
-.cover{
-    position: absolute;
-    left: 1400px;
-    top: 700px;
-}
-
-/* resize images. This code lets the image scale down if it has to,
- but never scale up to be larger than its original size  */
-/*.cover img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4%;
-    display: block;
-    padding: 5px;
-    margin: 5px;
-}*/
 
 .content {
     font-size: 14;
     font-family: Arial;
     color: rgb(14, 14, 14);
-    padding: 50px 50px;
-    margin: 0 auto;
-    min-height: 200px;
-    max-height: 600px;
+    padding: 2.5em;
 }
 
 .tracklist {

@@ -5,13 +5,16 @@
         <link href="purchase.css" type="text/css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </head>    
+        <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/color/32/000000/music-transcript.png"/>
+        <script src="https://kit.fontawesome.com/53e63c2ea0.js" crossorigin="anonymous"></script>
+    </head>    
     <body>
         <!--Header-->
         <header>
             <nav>
             <ul>
-                <li><a href="./index.html">Shop</a></li>
+                <li><a href="./index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="./shop.html">Shop</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./about.html">About The Artist</a></li>
                 <li>Fan Forum (COMING SOON!)</li>
@@ -22,8 +25,7 @@
         <!--Cart View-->
         <div class="viewcart">
             <a class="cart"  href="https://citylights.foxycart.com/cart?cart=view">
-                <img src="icons/supermarket24px.png">
-            <span class="fa fa-shopping-cart"></span>Cart (<span data-fc-id="minicart-quantity">0</span>)
+                <img src="icons/supermarket24px.png">Cart (<span data-fc-id="minicart-quantity">0</span>)
             </a>
         </div>        
         <!--Banner-->
@@ -37,16 +39,17 @@
                 $12.50
             </div>
 <!-- Form -->
-<form action="https://citylights.foxycart.com/cart" method="post" accept-charset="utf-8">
-<input type="hidden" name="name" value="City Lights album" />
-<input type="hidden" name="price" value="12.50" />
-<input type="hidden" name="code" value="sku123" />
-<label class="label_left">Album Version</label>
-<select name="album">
-    <option value="day">Day Version</option>
-    <option value="night">Night Version</option>
-</select>
-<input type="submit" value="Add to Cart" class="submit" />
+<form class="form_purchase" action="https://citylights.foxycart.com/cart" method="post" accept-charset="utf-8">
+    <input type="hidden" name="name" value="City Lights album" />
+    <input type="hidden" name="price" value="12.50" />
+    <input type="hidden" name="code" value="sku123" />
+    <label class="label_left">Album Version</label>
+    <select name="album">
+        <option value="day">Day Version</option>
+        <option value="night">Night Version</option>
+    </select>
+    <br>
+    <input class="button" type="submit" value="Add to Cart" class="submit" />
 </form>
 <!--form end-->
             <!--Preorder-->
