@@ -86,10 +86,6 @@ a:link {
     color: rgb(255, 255, 255);
   }
   
-  a:active {
-    text-decoration: underline;
-  }
-  
   footer{
     color: rgb(167, 167, 167);
     padding: 5px;
@@ -120,7 +116,7 @@ a:link {
   }
 }
 
-@media (max-width: 424px){
+@media (max-width: 430px){
   h1{
       display: none;
   }
